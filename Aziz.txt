@@ -1,0 +1,185 @@
+
+Azizjon@DESKTOP-8DVK8ED MINGW64 ~
+$  git clone https://github.com/davalisher/g16.git
+Cloning into 'g16'...
+remote: Enumerating objects: 36, done.
+remote: Counting objects: 100% (36/36), done.
+remote: Compressing objects: 100% (19/19), done.
+remote: Total 36 (delta 5), reused 36 (delta 5), pack-reused 0
+Unpacking objects: 100% (36/36), done.
+
+Azizjon@DESKTOP-8DVK8ED MINGW64 ~
+$ cd f:/projects
+
+Azizjon@DESKTOP-8DVK8ED MINGW64 /f/projects (master)
+$ cd project2
+
+Azizjon@DESKTOP-8DVK8ED MINGW64 /f/projects/project2 (master)
+$  git clone https://github.com/davalisher/g16.git
+fatal: destination path 'g16' already exists and is not an empty directory.
+
+Azizjon@DESKTOP-8DVK8ED MINGW64 /f/projects/project2 (master)
+$ g16
+bash: g16: command not found
+
+Azizjon@DESKTOP-8DVK8ED MINGW64 /f/projects/project2 (master)
+$ cd g16
+
+Azizjon@DESKTOP-8DVK8ED MINGW64 /f/projects/project2/g16 (master)
+$ git checkout Muhammad
+error: pathspec 'Muhammad' did not match any file(s) known to git
+
+Azizjon@DESKTOP-8DVK8ED MINGW64 /f/projects/project2/g16 (master)
+$ git checkout -u origin Muhammad
+error: unknown switch `u'
+usage: git checkout [<options>] <branch>
+   or: git checkout [<options>] [<branch>] -- <file>...
+
+    -q, --quiet           suppress progress reporting
+    -b <branch>           create and checkout a new branch
+    -B <branch>           create/reset and checkout a branch
+    -l                    create reflog for new branch
+    --detach              detach HEAD at named commit
+    -t, --track           set upstream info for new branch
+    --orphan <new-branch>
+                          new unparented branch
+    -2, --ours            checkout our version for unmerged files
+    -3, --theirs          checkout their version for unmerged files
+    -f, --force           force checkout (throw away local modifications)
+    -m, --merge           perform a 3-way merge with the new branch
+    --overwrite-ignore    update ignored files (default)
+    --conflict <style>    conflict style (merge or diff3)
+    -p, --patch           select hunks interactively
+    --ignore-skip-worktree-bits
+                          do not limit pathspecs to sparse entries only
+    --no-guess            do not second guess 'git checkout <no-such-branch>'
+    --ignore-other-worktrees
+                          do not check if another worktree is holding the given ref
+    --recurse-submodules[=<checkout>]
+                          control recursive updating of submodules
+    --progress            force progress reporting
+
+
+Azizjon@DESKTOP-8DVK8ED MINGW64 /f/projects/project2/g16 (master)
+$ git checkout -u origin Muhammad
+error: unknown switch `u'
+usage: git checkout [<options>] <branch>
+   or: git checkout [<options>] [<branch>] -- <file>...
+
+    -q, --quiet           suppress progress reporting
+    -b <branch>           create and checkout a new branch
+    -B <branch>           create/reset and checkout a branch
+    -l                    create reflog for new branch
+    --detach              detach HEAD at named commit
+    -t, --track           set upstream info for new branch
+    --orphan <new-branch>
+                          new unparented branch
+    -2, --ours            checkout our version for unmerged files
+    -3, --theirs          checkout their version for unmerged files
+    -f, --force           force checkout (throw away local modifications)
+    -m, --merge           perform a 3-way merge with the new branch
+    --overwrite-ignore    update ignored files (default)
+    --conflict <style>    conflict style (merge or diff3)
+    -p, --patch           select hunks interactively
+    --ignore-skip-worktree-bits
+                          do not limit pathspecs to sparse entries only
+    --no-guess            do not second guess 'git checkout <no-such-branch>'
+    --ignore-other-worktrees
+                          do not check if another worktree is holding the given ref
+    --recurse-submodules[=<checkout>]
+                          control recursive updating of submodules
+    --progress            force progress reporting
+
+
+Azizjon@DESKTOP-8DVK8ED MINGW64 /f/projects/project2/g16 (master)
+$ git checkout forall
+error: pathspec 'forall' did not match any file(s) known to git
+
+Azizjon@DESKTOP-8DVK8ED MINGW64 /f/projects/project2/g16 (master)
+$ git checkout origin forall
+error: pathspec 'forall' did not match any file(s) known to git
+
+Azizjon@DESKTOP-8DVK8ED MINGW64 /f/projects/project2/g16 (master)
+$  git push  origin forall
+error: src refspec forall does not match any
+error: failed to push some refs to 'https://github.com/davalisher/g16.git'
+
+Azizjon@DESKTOP-8DVK8ED MINGW64 /f/projects/project2/g16 (master)
+$  git push  origin master
+To https://github.com/davalisher/g16.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/davalisher/g16.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+Azizjon@DESKTOP-8DVK8ED MINGW64 /f/projects/project2/g16 (master)
+$  git push  origin muhammad
+error: src refspec muhammad does not match any
+error: failed to push some refs to 'https://github.com/davalisher/g16.git'
+
+Azizjon@DESKTOP-8DVK8ED MINGW64 /f/projects/project2/g16 (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Azizjon@DESKTOP-8DVK8ED MINGW64 /f/projects/project2/g16 (master)
+$ git add .
+
+Azizjon@DESKTOP-8DVK8ED MINGW64 /f/projects/project2/g16 (master)
+$ git commit -m 'Aziz added'
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Azizjon@DESKTOP-8DVK8ED MINGW64 /f/projects/project2/g16 (master)
+$ git push
+To https://github.com/davalisher/g16.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/davalisher/g16.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+Azizjon@DESKTOP-8DVK8ED MINGW64 /f/projects/project2/g16 (master)
+$ git pull
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (1/1), done.
+remote: Total 3 (delta 1), reused 3 (delta 1), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/davalisher/g16
+   2e4b145..745a373  master     -> origin/master
+ * [new branch]      Muhammad   -> origin/Muhammad
+ * [new branch]      forall     -> origin/forall
+Merge made by the 'recursive' strategy.
+ pdp.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 pdp.txt
+
+Azizjon@DESKTOP-8DVK8ED MINGW64 /f/projects/project2/g16 (master)
+$ git checkout origin/Muhammad
+Note: checking out 'origin/Muhammad'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by performing another checkout.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -b with the checkout command again. Example:
+
+  git checkout -b <new-branch-name>
+
+HEAD is now at 745a373 pdp.txt
+
+Azizjon@DESKTOP-8DVK8ED MINGW64 /f/projects/project2/g16 ((745a373...))
+$
